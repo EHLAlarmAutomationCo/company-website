@@ -1,0 +1,126 @@
+.contact-toggle-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.contact-toggle-section h2 {
+  font-size: 32px;
+}
+
+.contact-toggle-section p {
+  font-size: 18px;
+}
+
+.contact-toggle-section h3 {
+  font-size: 28px;
+}
+
+.contact-card-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.toggle-card {
+  background-color: #72b7fc;
+  border-radius: 12px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.toggle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.toggle-content {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: left;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.toggle-content.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.join-us-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.join-us-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.join-us-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px 25px;
+  background-color: #25D366;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1eb858;
+}

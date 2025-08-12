@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>EHL Alarm & Automation Co.</title>
+	<meta charset="utf-8">
+	<meta name="author" content="EHL">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="EHL 是位于马来西亚古晋的 CCTV、警报系统、电动门等安防设备安装公司。EHL is a security service provider offering CCTV, alarm, and autogate installation in Kuching.">
+	<meta name="keywords" content="古晋CCTV, CCTV安装, 自动门安装, 安防公司, Kuching CCTV installation, autogate service, security system, alarm installation, Kuching CCTV, Sarawak CCTV, EHL Alarm & Automation Co., ehl alarm">
+	<meta name="robots" content="index, follow">
+	<meta name="google-site-verification" content="2DrAriJguER1t-HGhntHEa3ff1igMqU1xLiRp_3d1oE" />
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="https://EHLAlarmAutomationCo.github.io/company-website/sitemap.xml">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/indexStyle.css">
+	<script src="js/lang.js"></script>
+	
+</head>
+
+<body onload = "initLang()">
+
+		<header class="header">
+			  <div class="logo-title">
+			    <img src="images/companyLogo.png" alt="Company Logo" class="logo-img" />
+			    <h1 class="company-name">EHL Alarm & Automation Co.</h1>
+			  </div>
+
+
+		<nav class = "navigationBar">
+			
+
+			<ul class = "navLinks">
+				<li><a href = "index.html" data-i18n = "home">Home</a></li>
+				<li><a href = "Services.html" data-i18n = "services">Services</a></li>
+				<li><a href = "ContactUs.html" data-i18n = "contactUs">Contact Us</a></li>
+				<li><a href = "AboutUs.html" data-i18n = "aboutUs">About Us</a></li>
+				<!--<li><a href = "FAQ.html" data-i18n = "FAQ">FAQ</a></li>-->
+				<li class = "language-dropdown">
+					<span id = "language-toggle" data-i18n = "language">Language</span>
+					<ul class = "languageList">
+						<li onclick = "changeLang('en')">English</li>
+						<li onclick = "changeLang('zh')">中文</li>
+						<li onclick = "changeLang('ms')">Bahasa Melayu</li>
+
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<script>
+	  document.addEventListener("DOMContentLoaded", () => {
+	    const path = window.location.pathname;
+	    const navLinks = document.querySelectorAll(".navLinks a");
+
+	    navLinks.forEach(link => {
+	      if (link.href.includes(path.split('/').pop())) {
+	        link.classList.add("active");
+	      }
+	    });
+	  });
+	</script>
+
+
+	<article>
+
+		<section class="home-welcome">
+		  <h2 data-i18n = "welcome">Welcome to EHL Alarm & Automation Co.</h2>
+		  <p data-i18n = "welcomeSub">We provide professional and reliable security and automation solutions — from CCTV and alarm installations to gate repairs. Your safety, our priority.</p>
+		</section>
+
+		<section class = "servicesAd">
+			<h2 data-i18n = "ourServices">Our Services</h2>
+			<div class = "Ad-container">
+				<!--左箭头-->
+				<button class = "carousel-arrow left"><</button>
+
+				<!--图片轮播主区域-->
+				<div class = "Ad-track">
+					<div class = "services-item">
+						<img src = "images/cctvExample1.jpg" alt = "CCTV Installation">
+						<div class="caption">
+							<h3 data-i18n = "service1">CCTV Installation</h3>
+							<p data-i18n = "service1DescShort">Indoor & outdoor HD cameras with night vision and remote access.</p>
+							<a href = "Services.html#cctv" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+					<div class = "services-item">
+						<img src = "images/installAutogates1.jpg" alt = "AutoGate Installation">
+						<div class="caption">
+							<h3 data-i18n = "service2">Autogate Installation & Repair</h3>
+							<p data-i18n = "service2DescShort">Swing, sliding, and shutter autogates with secure control. Autogate Remote / Key Replacement & Repair</p>
+							<a href = "Services.html#autogate" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+					<div class = "services-item">
+						<img src = "images/alarm.jpg" alt = "Alarm Systems Installation">
+						<div class="caption">
+							<h3 data-i18n = "service3">Alarm Systems</h3>
+							<p data-i18n = "service3DescShort">Enhance your security with customizable alarm solutions.</p>
+							<a href = "Services.html#alarm" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+					<div class = "services-item">
+						<img src = "images/secureDoor.jpg" alt = "Secure Doors & Smart Locks Installation">
+						<div class="caption">
+							<h3 data-i18n = "service4">Secure Doors & Smart Locks</h3>
+							<p data-i18n = "service4DescShort">Digital locks and auto doors with biometric access.</p>
+							<a href = "Services.html#certifiedDoor" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+					<!--<div class = "services-item">
+						<img src = "images/dd.jpg" alt = "Autogate Remote / Key Replacement & Repair">
+						<div class="caption">
+							<h3 data-i18n = "service5">Autogate Remote / Key Replacement & Repair</h3>
+							<p data-i18n = "service5DescShort">Replace or repair faulty remotes and access keys quickly.</p>
+							<a href = "Services.html#repair" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>-->
+
+					<div class = "services-item">
+						<img src = "images/parkingManagement.jpg" alt = "Parking Management">
+						<div class="caption">
+							<h3 data-i18n = "service6">Parking Management</h3>
+							<p data-i18n = "service6DescShort">Smart systems with RFID, barriers & license plate recognition.</p>
+							<a href = "Services.html#parkingManagement" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+					<div class = "services-item">
+						<img src = "images/apartmentIntercom.png" alt = "Apartment Intercom">
+						<div class="caption">
+							<h3 data-i18n = "service7">Apartment Intercom</h3>
+							<p data-i18n = "service7DescShort">Talk to visitors and unlock remotely from your unit.</p>
+							<a href = "Services.html#apartmentIntercom" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+					<div class = "services-item">
+						<img src = "images/access.jpg" alt = "Access Control & Attendance Systems">
+						<div class="caption">
+							<h3 data-i18n = "service8">Access Control & Attendance Systems</h3>
+							<p data-i18n = "service8DescShort">Track attendance with secure biometric verification.</p>
+							<a href = "Services.html#accessControl" class = "learn-more" data-i18n = "learnMore">Learn More →</a>
+					</div>
+				</div>
+
+			</div>
+			<!--右箭头-->
+			<button class = "carousel-arrow right">></button>
+		</div>
+				<div class="carousel-dots"></div>
+				
+			</section>
+
+			<script>
+				class FullscreenCarousel {
+					  constructor(container) {
+					    this.container = container;
+					    this.track = container.querySelector('.Ad-track');
+					    this.items = Array.from(this.track.children);
+					    this.arrows = {
+					      left: container.querySelector('.carousel-arrow.left'),
+					      right: container.querySelector('.carousel-arrow.right')
+					    };
+					    this.dotsContainer = container.querySelector('.carousel-dots');
+					    this.currentIndex = 0;
+
+					    this.initDots();
+					    this.setupEventListeners();
+					    this.startAutoPlay();
+					  }
+
+					  initDots() {
+					    this.items.forEach((_, i) => {
+					      const dot = document.createElement('span');
+					      dot.addEventListener('click', () => this.goToIndex(i));
+					      this.dotsContainer.appendChild(dot);
+					    });
+					    this.updateDots();
+					  }
+
+					  goToIndex(index) {
+					    this.currentIndex = (index + this.items.length) % this.items.length;
+					    this.track.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+					    this.updateDots();
+					  }
+
+					  updateDots() {
+					    this.dotsContainer.querySelectorAll('span').forEach((dot, i) => {
+					      dot.classList.toggle('active', i === this.currentIndex);
+					    });
+					  }
+
+					  setupEventListeners() {
+					    this.arrows.left.addEventListener('click', () => this.goToIndex(this.currentIndex - 1));
+					    this.arrows.right.addEventListener('click', () => this.goToIndex(this.currentIndex + 1));
+					  }
+
+					  startAutoPlay() {
+					    setInterval(() => {
+					      this.goToIndex(this.currentIndex + 1);
+					    }, 8000);
+					  }
+					}
+
+					// 初始化
+					document.addEventListener("DOMContentLoaded", function(){
+						new FullscreenCarousel(document.querySelector('.servicesAd'));
+					});
+					
+				
+			</script>
+
+			<section class = "contact-box">
+				<h2 data-i18n = "contactUsShort">Contact Us</h2>
+
+				<div class = "contact-item">
+					<strong data-i18n = "phoneNumber">Contact Number: </strong>
+					<span>082-256 681 / 016-870 2799</span>
+				</div>
+
+				<div class = "contact-item">
+					<strong data-i18n = "serviceScope">Service scope: </strong>
+					<span>Kuching, Sarawak</span>
+				</div>
+
+				<div class = "contact-item">
+					<strong data-i18n = "location">Location: </strong>
+					<span>Lot 8358, Golden Arch Shopping Mall 3rd Mile, Jalan Rock, Hua Joo Park, 93250 Kuching, Sarawak</span>
+				</div>
+			</section>
+
+			<div class = "map-container">
+				<h3 data-i18n = "ourLocation">Our Location</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.414517695602!2d110.33418207348939!3d1.519941361008595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba7612d3fffff%3A0x18edfa0658f0866!2sEHL%20Alarm%20%26%20Automation%20Co.!5e0!3m2!1szh-CN!2smy!4v1754372097498!5m2!1szh-CN!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+				width = "100%"
+				height = "400"
+				stylq = "border: 0;"
+				allowfullscreen = ""
+				loading = "lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<br><a href = "https://maps.app.goo.gl/C74a2bMxQKDUL7VN6" target = "_blank" class = "mapLink" data-i18n = "viewLargeMap">View larger map</a>
+			</div>
+
+</article>
+
+	<script>
+		  // 语言按钮点击后切换显示
+		  document.getElementById("language-toggle").addEventListener("click", function () {
+		    const dropdown = this.parentElement;
+		    dropdown.classList.toggle("active");
+		  });
+
+		  // 页面加载时自动使用之前选择的语言
+
+		  
+	</script>
+
+
+</body>
+
+<footer class = "siteFooter">
+	<div class = "footerContact">
+		<!--<section class="contact-short">-->
+		  <h2 data-i18n="contactUsShort">Contact Us</h2>
+		  <p data-i18n="contactDesc">Have a question or need our service? Reach us directly:</p>
+		  <div class="contact-buttons">
+		    <a href="https://wa.me/60168702799" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+		    <a href="tel:0168702799" class="contact-btn phone">Call Us</a>
+		    <a href="https://maps.app.goo.gl/C74a2bMxQKDUL7VN6" class="contact-btn location">Location</a>
+		  </div>
+		</div>
+		<!--</section>-->
+
+		<div class = "footerBottom">
+			<p>© <span id="year"></span> EHL Alarm & Automation Co. All rights reserved.</p>
+		</div>
+
+		<script>
+		  document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+
+	</footer>
+
+</html>

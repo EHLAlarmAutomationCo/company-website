@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>EHL Alarm & Automation Co.</title>
+	<meta charset="utf-8">
+	<meta name="author" content="EHL">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="EHL 是一家位于古晋的本地安防服务公司，拥有 20 多年经验，提供 CCTV 安装、自动门、警报系统等服务。了解我们的团队与愿景。">
+	<meta name="keywords" content="关于 EHL, 古晋安防公司, CCTV 公司介绍, 安防团队, 自动门公司, 本地安防服务, EHL 安装公司, Kuching CCTV, Kuching Alarm, EHL Alarm, ehl alarm, alarm company, CCTV, security services">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/aboutUsStyle.css">
+	<script src="js/lang.js"></script>
+
+</head>
+
+<body onload="initLang()">
+
+	<header class="header">
+			  <div class="logo-title">
+			    <img src="images/companyLogo.png" alt="Company Logo" class="logo-img" />
+			    <h1 class="company-name">EHL Alarm & Automation Co.</h1>
+			  </div>
+
+
+		<nav class = "navigationBar">
+			
+
+			<ul class = "navLinks">
+				<li><a href = "index.html" data-i18n = "home">Home</a></li>
+				<li><a href = "Services.html" data-i18n = "services">Services</a></li>
+				<li><a href = "ContactUs.html" data-i18n = "contactUs">Contact Us</a></li>
+				<li><a href = "AboutUs.html" data-i18n = "aboutUs">About Us</a></li>
+				<!--<li><a href = "FAQ.html" data-i18n = "FAQ">FAQ</a></li>-->
+				<li class = "language-dropdown">
+					<span id = "language-toggle" data-i18n = "language">Language</span>
+					<ul class = "languageList">
+						<li onclick = "changeLang('en')">English</li>
+						<li onclick = "changeLang('zh')">中文</li>
+						<li onclick = "changeLang('ms')">Bahasa Melayu</li>
+
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+		<script>
+		  document.addEventListener("DOMContentLoaded", () => {
+		    const path = window.location.pathname;
+		    const navLinks = document.querySelectorAll(".navLinks a");
+
+		    navLinks.forEach(link => {
+		      if (link.href.includes(path.split('/').pop())) {
+		        link.classList.add("active");
+		      }
+		    });
+		  });
+		</script>
+
+	<article>
+
+		<section class="about-us">
+		  <h2 data-i18n="aboutTitle">About Us</h2>
+		  <p data-i18n="aboutIntro">
+		    EHL Alarm & Automation Co. is a local security and automation service provider based in Kuching, Sarawak, Malaysia. We specialize in the installation and repair of CCTV surveillance systems, autogates, access control systems, alarm systems, and digital locks.
+		  </p>
+
+		  <p data-i18n="aboutExperience">
+		    Since our establishment in 1997, we have accumulated over 20 years of hands-on experience in installation and maintenance, having served hundreds of households, shops, and community clients.
+		  </p>
+
+		  <p data-i18n="aboutCustomers">
+		    We value communication and collaboration with our clients and strive to provide tailored solutions based on each customer’s specific needs.
+		  </p>
+
+		  <p data-i18n="aboutTeam">
+		    Our team consists of experienced and reliable technicians who focus on site inspection, equipment matching, and user experience, ensuring every service is stable, efficient, and thoughtful.
+		  </p>
+
+		  <p data-i18n="aboutValues">
+		    Whether you're installing for the first time, upgrading your system, or need maintenance and inspection, we aim to be your trusted local technical partner.
+		  </p>
+		</section>
+
+		<section class = "contact-box">
+				<h2 data-i18n = "contactUsShort">Contact Us</h2>
+
+				<div class = "contact-item">
+					<strong data-i18n = "phoneNumber">Contact Number: </strong>
+					<span>082-256 681 / 016-870 2799</span>
+				</div>
+
+				<div class = "contact-item">
+					<strong data-i18n = "serviceScope">Service scope: </strong>
+					<span>Kuching, Sarawak</span>
+				</div>
+
+				<div class = "contact-item">
+					<strong data-i18n = "location">Location: </strong>
+					<span>Lot 8358, Golden Arch Shopping Mall 3rd Mile, Jalan Rock, Hua Joo Park, 93250 Kuching, Sarawak</span>
+				</div>
+			</section>
+
+			<div class = "map-container">
+				<h3 data-i18n = "ourLocation">Our Location</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.414517695602!2d110.33418207348939!3d1.519941361008595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba7612d3fffff%3A0x18edfa0658f0866!2sEHL%20Alarm%20%26%20Automation%20Co.!5e0!3m2!1szh-CN!2smy!4v1754372097498!5m2!1szh-CN!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+				width = "100%"
+				height = "400"
+				stylq = "border: 0;"
+				allowfullscreen = ""
+				loading = "lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<br><a href = "https://maps.app.goo.gl/C74a2bMxQKDUL7VN6" target = "_blank" class = "mapLink" data-i18n = "viewLargeMap">View larger map</a>
+			</div>
+
+
+
+
+
+<script>
+		  // 语言按钮点击后切换显示
+		  document.getElementById("language-toggle").addEventListener("click", function () {
+		    const dropdown = this.parentElement;
+		    dropdown.classList.toggle("active");
+		  });
+
+		  // 切换语言
+		  function setLanguage(lang) {
+		    localStorage.setItem("lang", lang);
+		    location.reload(); // 重新载入页面并更新语言
+		  }
+	</script>
+
+</article>
+</body>
+
+<footer class = "siteFooter">
+	<div class = "footerContact">
+		<!--<section class="contact-short">-->
+		  <h2 data-i18n="contactUsShort">Contact Us</h2>
+		  <p data-i18n="contactDesc">Have a question or need our service? Reach us directly:</p>
+		  <div class="contact-buttons">
+		    <a href="https://wa.me/60168702799" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+		    <a href="tel:0168702799" class="contact-btn phone">Call Us</a>
+		    <a href="https://maps.app.goo.gl/C74a2bMxQKDUL7VN6" class="contact-btn location">Location</a>
+		  </div>
+		</div>
+		<!--</section>-->
+
+		<div class = "footerBottom">
+			<p>© <span id="year"></span> EHL Alarm & Automation Co. All rights reserved.</p>
+		</div>
+
+		<script>
+		  document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+
+	</footer>
+
+</html>

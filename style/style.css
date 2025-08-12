@@ -1,0 +1,397 @@
+/*header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: white;
+  max-width: 1200px;
+}
+
+/*logo*/
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* logo 和文字之间的间距 */
+  margin-right: auto;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+/*company name*/
+.company-name {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+/* navigation 导航基本样式 */
+.navigationBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	padding: 10px 5%; /*改用百分比更适应移动端*/
+	position: relative; 
+	flex-wrap: wrap; /*允许在小屏幕换行*/
+	font-family: Arial, sans-serif;
+	z-index: 15;
+  margin-top: 20px;
+}
+
+/*navigation links: home  service ....*/
+.navLinks {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	flex-grow: 1; /*填充剩余空间*/
+	justify-content: center; /*中间*/
+	flex-wrap: wrap; /*允许换行*/
+  line-height: 1.5;
+  row-gap: 6px;
+}
+
+.navLinks li {
+	margin: 0 12px; /*间距*/
+	position: relative;
+	white-space: normal; /*防止文字换行*/
+  min-width: max-content;
+}
+
+.navLinks a, .language-dropdown span {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+
+/*nav hover*/
+.navLinks a {
+	position: relative;
+	transition: all 0.3s ease;
+	color: #333;
+	padding: 5px 0;
+}
+
+.navLinks a:hover {
+	color: #0066cc;
+}
+
+.navLinks a::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0066cc;
+	transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+	width: 100%;
+}
+
+.navLinks a.active {
+  color: #0066cc;
+}
+
+.navLinks a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0066cc;
+}
+
+header {
+  border-bottom: 2px solid #e1e1e1; /*下划线*/
+  margin-bottom: 20px;
+}
+
+/* language drop list 下拉语言菜单隐藏样式 */
+.languageList {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+  transform: translateX(-50%);
+	background-color: white;
+	border: 1px solid #ccc;
+	list-style: none;
+	padding: 5px 0;
+	min-width: 120px;
+	z-index: 30;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.languageList li {
+	cursor: pointer;
+	padding: 8px 12px;
+}
+
+.languageList li:hover {
+	background-color: #eee;
+}
+
+.language-dropdown.active .languageList {
+	display: block;
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+/* language hover 语言选择器悬停效果 */
+.language-dropdown > span {
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.language-dropdown > span:hover {
+  color: #0066cc;
+}
+
+.language-dropdown > span::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.language-dropdown > span:hover::after {
+  width: 100%;
+}
+
+/* language drop list hover下拉菜单项的悬停效果 */
+.languageList li {
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.languageList li:hover {
+  background-color: #f5f5f5;
+  color: #0066cc;
+}
+
+.languageList li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.languageList li:hover::after {
+  width: calc(100% - 30px); /* 考虑左右padding */
+}
+
+/* 当前语言高亮 */
+.languageList li.active-language {
+  font-weight: bold;
+  color: #0066cc;
+  position: relative;
+}
+
+.languageList li.active-language::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 2px;
+  width: calc(100% - 10px);
+  height: 2px;
+  background-color: #0066cc;
+}
+
+
+/*footer*/
+.siteFooter {
+  background: #d4ebfc;
+  color: white;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+
+.footerContact h2,
+.footerContact p {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.contact-btn.whatsapp {
+  background-color: #25D366;
+}
+
+.contact-btn.phone {
+  background-color: #007bff;
+}
+
+.contact-btn.location {
+  background-color: #ff9800;
+}
+
+.contact-btn:hover {
+  opacity: 0.85;
+}
+
+.footerBottom {
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+  color: grey;
+}
+
+/*home page & about us & contact us page below contact in word not link show*/
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-box {
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.contact-box h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-item strong {
+  display: inline-block;
+  width: 150px;
+  font-weight: 600;
+  color: #0066cc;
+}
+
+.contact-item span {
+  display: inline;
+}
+
+
+/*map 地图*/
+.map-container {
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.mapLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*手机显示视角*/
+@media (max-width: 768px){
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-title {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navigationBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-content img {
+    max-width: 100%;
+  }
+
+  .service-text {
+    padding: 0 10px;
+  }
+
+}
+
+/*电脑小屏显示视角*/
+@media (max-width: 600px) {
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLinks li {
+    margin: 10px 0;
+  }
+
+  .service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-content img {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .service-text {
+    padding: 0 10px;
+  }
+
+}

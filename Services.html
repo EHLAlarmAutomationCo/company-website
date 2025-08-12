@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>EHL Alarm & Automation Co.</title>
+	<meta charset="utf-8">
+	<meta name="author" content="EHL">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="查看 EHL 提供的专业服务，包括室内外 CCTV 安装、自动门维修、警报系统安装、门禁系统与电子锁服务。为什么选择我们？点击了解更多。">
+	<meta name="keywords" content="CCTV服务, 自动门安装, 电动门维修, 警报器, 门禁系统, 古晋安防公司, EHL 安防服务, CCTV installation, CCTV, autogate, autogate repair, alarm service, alarm, Secure Door, Parking Management, Apartment Intercom, access control">
+	<meta name="robots" content="index, follow">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/servicesStyle.css">
+	<script src="js/lang.js"></script>
+
+</head>
+
+<body onload="initLang()">
+
+	<header class="header">
+			  <div class="logo-title">
+			    <img src="images/companyLogo.png" alt="Company Logo" class="logo-img" />
+			    <h1 class="company-name">EHL Alarm & Automation Co.</h1>
+			  </div>
+
+
+		<nav class = "navigationBar">
+			
+
+			<ul class = "navLinks">
+				<li><a href = "index.html" data-i18n = "home">Home</a></li>
+				<li><a href = "Services.html" data-i18n = "services">Services</a></li>
+				<li><a href = "ContactUs.html" data-i18n = "contactUs">Contact Us</a></li>
+				<li><a href = "AboutUs.html" data-i18n = "aboutUs">About Us</a></li>
+				<!--<li><a href = "FAQ.html" data-i18n = "FAQ">FAQ</a></li>-->
+				<li class = "language-dropdown">
+					<span id = "language-toggle" data-i18n = "language">Language</span>
+					<ul class = "languageList">
+						<li onclick = "changeLang('en')">English</li>
+						<li onclick = "changeLang('zh')">中文</li>
+						<li onclick = "changeLang('ms')">Bahasa Melayu</li>
+
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<script>
+	  document.addEventListener("DOMContentLoaded", () => {
+	    const path = window.location.pathname;
+	    const navLinks = document.querySelectorAll(".navLinks a");
+
+	    navLinks.forEach(link => {
+	      if (link.href.includes(path.split('/').pop())) {
+	        link.classList.add("active");
+	      }
+	    });
+	  });
+	</script>
+
+	<article>
+
+		<section class = "services-header">
+			<h2 data-i18n = "ourServices">Our Services</h2>
+			<p data-i18n = "ourServicesSub">CCTV installation · Autogate installation · Professional On-Site Service<br>Serving Residential, Commercial, and Comminuty Properties with Fast Response and Rich Experience</p>
+			<div class = "section-divider"></div>
+		</section>
+
+
+		<section id="cctv" class="service-detail">
+		  <div class="service-content">
+		    <img src="images/cctvExample1.jpg" alt="CCTV Installation">
+		    <div class="service-text">
+		      <h2 data-i18n="service1">Install CCTV (Indoor & Outdoor)</h2>
+		      <p data-i18n="service1Desc">We provide indoor and outdoor CCTV camera installation with high-definition clarity and night vision to help monitor and secure your premises.</p>
+		      <ul>
+		        <li data-i18n="feature1">High-definition video</li>
+		        <li data-i18n="feature2">Night vision</li>
+		        <li data-i18n="feature3">Remote monitoring via app</li>
+		        <li data-i18n="feature4">Professional installation team</li>
+		      </ul>
+		    </div>
+		  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+		<section id="autogate" class="service-detail alt">
+		  <div class="service-content">
+		    <div class="service-text">
+		      <h2 data-i18n="service2">Install & Repair Autogates (Sliding, Roller Shutter, etc.)</h2>
+		      <p data-i18n="service2Desc">We install swing, sliding, and folding automatic gates with secure access control systems. We also have Autogate Remote / Key Replacement & Repair</p>
+		      <ul>
+		        <li data-i18n="feature5">Secure access</li>
+		        <li data-i18n="feature6">Smooth operation</li>
+		        <li data-i18n="feature7">Backup battery options</li>
+		        <li data-i18n="feature8">Maintenance</li>
+		      </ul>
+		    </div>
+		    <img src="images/installAutogates1.jpg" alt="Auto Gate">
+		  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+		<section id="alarm" class="service-detail">
+		  <div class="service-content">
+		    <img src="images/alarm.jpg" alt="Repair Services">
+		    <div class="service-text">
+		      <h2 data-i18n="service3">Install Alarm Systems</h2>
+		      <p data-i18n="service3Desc">We install basic alarm systems to help enhance general property security and alerting capabilities.</p>
+		      <ul>
+		        <li data-i18n="feature9">Diverse choices</li>
+		        <li data-i18n="feature5">Secure access</li>
+		        <li data-i18n="feature10">Friendly support</li>
+		        <li data-i18n="feature4">Professional installation team</li>
+		      </ul>
+		    </div>
+		  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+		<section id="certifiedDoor" class="service-detail alt">
+				  <div class="service-content">
+				    <div class="service-text">
+				      <h2 data-i18n="service4">Secure Door Installations (Digital Locks, Keypads, Auto-Doors, )</h2>
+				      <p data-i18n="service4Desc">We install doors equipped with digital locks, keypads, and automation systems to enhance access control.<br>Options include biometric verification like fingerprint and facial recognition.</p>
+				      <ul>
+				        <li data-i18n="feature5">Secure access</li>
+				        <li data-i18n="feature6">Smooth operation</li>
+				        <li data-i18n="feature9">Diverse choices</li>
+				        <li data-i18n="feature8">Maintenance</li>
+				      </ul>
+				    </div>
+				    <img src="images/secureDoor1.jpg" alt="Auto Gate">
+				  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+		<!--<section id="repair" class="service-detail">
+		  <div class="service-content">
+		    <img src="images/repair-example.jpg" alt="Repair Services">
+		    <div class="service-text">
+		      <h2 data-i18n="service5">Autogate Remote / Key Replacement & Repair</h2>
+		      <p data-i18n="service5Desc">We assist with repairing or replacing faulty autogate remotes and access keys to restore convenience.</p>
+		      <ul>
+		        <li data-i18n="feature11">Fast on-site service</li>
+		        <li data-i18n="feature12">Transparent pricing</li>
+		        <li data-i18n="feature13">Spare parts available</li>
+		        <li data-i18n="feature10">Friendly support</li>
+		      </ul>
+		    </div>
+		  </div>
+		</section>-->
+
+		<section id="parkingManagement" class="service-detail alt">
+				  <div class="service-content">
+				  	<img src="images/parkingManagement.jpg" alt="Auto Gate">
+				    <div class="service-text">
+				      <h2 data-i18n="service6">Parking Management</h2>
+				      <p data-i18n="service6Desc">We provide smart parking solutions including automated barriers, RFID access, and license plate recognition. Improve traffic flow and security in residential or commercial parking areas.</p>
+				      <ul>
+				        <li data-i18n="feature5">Secure access</li>
+				        <li data-i18n="feature6">Smooth operation</li>
+				        <li data-i18n="feature9">Diverse choices</li>
+				        <li data-i18n="feature8">Maintenance</li>
+				      </ul>
+				    </div>
+				  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+		<section id="apartmentIntercom" class="service-detail">
+		  <div class="service-content">
+		    
+		    <div class="service-text">
+		      <h2 data-i18n="service7">Apartment Intercom</h2>
+		      <p data-i18n="service7Desc">We install intercom systems for apartments and condos, allowing residents to communicate with visitors at the entrance and unlock doors remotely. Suitable for multi-unit buildings and gated residences.</p>
+		      <ul>
+		        <li data-i18n="feature9">Diverse choices</li>
+		        <li data-i18n="feature5">Secure access</li>
+		        <li data-i18n="feature10">Friendly support</li>
+		        <li data-i18n="feature4">Professional installation team</li>
+		      </ul>
+		    </div>
+		    <img src="images/apartmentIntercom.png" alt="Repair Services">
+		  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+		<section id="accessControl" class="service-detail alt">
+				  <div class="service-content">
+				  	<img src="images/access.jpg" alt="Auto Gate">
+				    <div class="service-text">
+				      <h2 data-i18n="service8">Access Control & Attendance Systems</h2>
+				      <p data-i18n="service8Desc">Integrated systems for managing entry and tracking employee attendance.<br>Use secure authentication such as RFID cards, fingerprint scanners, and facial recognition. Ideal for offices, factories, and gated communities.</p>
+				      <ul>
+				        <li data-i18n="feature5">Secure access</li>
+				        <li data-i18n="feature6">Smooth operation</li>
+				        <li data-i18n="feature9">Diverse choices</li>
+				        <li data-i18n="feature8">Maintenance</li>
+				      </ul>
+				    </div>
+				  </div>
+		</section>
+
+		<div class = "section-line"></div>
+
+
+
+
+<section class="why-us">
+  <h2 data-i18n="why-us">Why Choose Us</h2>
+  <div class="why-us-container">
+    <div class="why-item">
+      <!--<img src="icons/fast-response.png" alt="Fast Service">-->
+      <h3 data-i18n="advantage1">Fast Response</h3>
+      <p data-i18n="advantage1Desc">Quick and efficient on-site service.</p>
+    </div>
+    <div class="why-item">
+      <!--<img src="icons/local-support.png" alt="Local Team">-->
+      <h3 data-i18n="advantage2">Experienced Technicians</h3>
+      <p data-i18n="advantage2Desc">Reliable service by skilled and responsible technicians.</p>
+    </div>
+    <div class="why-item">
+      <!--<img src="icons/trusted.png" alt="Reliable">-->
+      <h3 data-i18n="advantage3">After-Sales Support</h3>
+      <p data-i18n="advantage3Desc">Ongoing support is available to help ensure your system continues to function properly.</p>
+    </div>
+    <div class="why-item">
+      <!--<img src="icons/trusted.png" alt="Reliable">-->
+      <h3 data-i18n="advantage4">Custom Solutions</h3>
+      <p data-i18n="advantage4Desc">We provide tailored setups based on your specific security or automation needs.</p>
+    </div>
+  </div>
+</section>
+
+
+<script>
+		  // 语言按钮点击后切换显示
+		  document.getElementById("language-toggle").addEventListener("click", function () {
+		    const dropdown = this.parentElement;
+		    dropdown.classList.toggle("active");
+		  });
+
+		  // 页面加载时自动使用之前选择的语言
+
+		  
+	</script>
+
+</article>
+</body>
+
+<footer class = "siteFooter">
+	<div class = "footerContact">
+		<!--<section class="contact-short">-->
+		  <h2 data-i18n="contactUsShort">Contact Us</h2>
+		  <p data-i18n="contactDesc">Have a question or need our service? Reach us directly:</p>
+		  <div class="contact-buttons">
+		    <a href="https://wa.me/60168702799" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+		    <a href="tel:0168702799" class="contact-btn phone">Call Us</a>
+		    <a href="https://maps.app.goo.gl/C74a2bMxQKDUL7VN6" class="contact-btn location">Location</a>
+		  </div>
+		</div>
+		<!--</section>-->
+
+		<div class = "footerBottom">
+			<p>© <span id="year"></span> EHL Alarm & Automation Co. All rights reserved.</p>
+		</div>
+
+		<script>
+		  document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+
+	</footer>
+
+</html>

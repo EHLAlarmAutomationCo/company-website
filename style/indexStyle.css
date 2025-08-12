@@ -1,0 +1,132 @@
+/*home welcome*/
+.home-welcome {
+  background-color: #eaf5ff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.home-welcome h2 {
+  font-size: 32px;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.home-welcome p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*home page ad*/
+.servicesAd {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.servicesAd h2 {
+  font-size: 32px;
+}
+
+.servicesAd h3 {
+  font-size: 24px;
+}
+
+.servicesAd p {
+  font-size: 18px;
+}
+
+.Ad-container {
+  position: relative;
+}
+
+.Ad-track {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  width: 100%;
+}
+
+.services-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  height: auto;
+}
+
+.services-item img {
+  width: 100%;
+  /*height: 60vh;*/
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+  max-height: 400px;
+}
+
+.caption {
+  padding: 20px 20px;
+  color: #333;
+  background-color: #eee;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffffcc;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}
+
+.learn-more {
+  position: relative;
+  transition: all 0.3s ease;
+  color: #333;
+  padding: 5px 0;
+}
+
+.learn-more:hover {
+  color: #0066cc;
+}
+
+.learn-more::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.learn-more:hover::after {
+  width: 100%;
+}
