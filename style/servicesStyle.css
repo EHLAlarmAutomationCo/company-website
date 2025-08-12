@@ -46,7 +46,7 @@
 }
 
 .service-content img {
-  flex: 0 0 45%;
+  flex: 0 0 35%;
   height: 300px;
   max-width: 100%;
   object-fit: contain;
@@ -148,6 +148,7 @@
   color: #555;
 
 }
+
 
 
 
