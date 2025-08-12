@@ -323,6 +323,24 @@ header {
   text-align: center;
 }
 
+/* 让 iframe 自适应宽高 */
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px; /* 可选：圆角美化 */
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .mapLink {
   display: inline-block;
   margin-top: 10px;
@@ -393,5 +411,6 @@ header {
   .service-text {
     padding: 0 10px;
   }
+
 
 }
