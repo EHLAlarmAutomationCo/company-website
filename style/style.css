@@ -390,7 +390,7 @@ header {
   }
 
 	.map-container {
-    	padding: 0 7px; /* 给手机左右留点空隙 */
+    	padding: 0 9px; /* 给手机左右留点空隙 */
   }
 
 }
@@ -422,6 +422,7 @@ header {
 
 
 }
+
 
 
 
