@@ -30,28 +30,33 @@
 .service-detail {
   padding: 50px 20px;
   background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .service-content {
   display: flex;
-  align-items: flex-start; /* 让内容顶部对齐 */
+  align-items: flex-start;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px; /* 图片和文字的间距 */
-  flex-wrap: wrap; /* 让小屏幕自动换行 */
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .service-content img {
-  flex: 0 0 320px; /* 固定最大宽度，防止图片太宽 */
-  max-width: 100%; /* 防止小屏溢出 */
-  height: auto;
+  flex: 0 0 45%;
+  height: 300px;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: 10px;
 }
 
 .service-text {
-  flex: 1;
+  flex: 0 0 45%;
   min-width: 300px;
+  max-width: 45%;
 }
 
 .service-text h2 {
@@ -76,8 +81,8 @@
 }
 
 .section-line {
-  width: 90%; /* 或者 90% 留两边空隙 */
-  max-width: 1200px; /* 限制在大屏上不超过 1200px */
+  width: 90%;
+  max-width: 1200px;
   height: 2px;
   background: linear-gradient(to right, black, white);
   margin: 0 auto;
@@ -143,6 +148,7 @@
   color: #555;
 
 }
+
 
 
 
