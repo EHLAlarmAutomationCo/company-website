@@ -319,17 +319,15 @@ header {
 /*map 地图*/
 .map-container {
   margin: 30px auto;
-  max-width: 800px;
+  width: 100%;
   text-align: center;
 }
 
-/* 让 iframe 自适应宽高 */
 .map-responsive {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 比例 */
   height: 0;
   overflow: hidden;
-  border-radius: 10px; /* 可选：圆角美化 */
 }
 
 .map-responsive iframe {
@@ -349,6 +347,12 @@ header {
   font-weight: bold;
 }
 
+/* 让电脑上更大 */
+@media (min-width: 1024px) {
+  .map-container {
+    max-width: 1200px; /* 桌面版宽度大一点 */
+  }
+}
 
 /*手机显示视角*/
 @media (max-width: 768px){
@@ -385,6 +389,10 @@ header {
     padding: 0 10px;
   }
 
+	.map-container {
+    	padding: 0 10px; /* 给手机左右留点空隙 */
+  }
+
 }
 
 /*电脑小屏显示视角*/
@@ -414,3 +422,4 @@ header {
 
 
 }
+
