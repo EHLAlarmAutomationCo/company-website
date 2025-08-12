@@ -413,13 +413,29 @@ header {
     padding: 0 10px; /* 给手机左右留点空隙 */
   }
 
-	.map-container iframe {
-	  width: 100%;       /* 占满容器宽度 */
-	  max-width: 100%;   /* 不超出容器 */
-	  height: 300px;     /* 适合手机的高度，可以调整 */
-	  border: 0;
-	  display: block;    /* 去掉 iframe 自带的 inline 空隙 */
+  .map-container iframe {
+	width: 100%;       /* 占满容器宽度 */
+	max-width: 100%;   /* 不超出容器 */
+	height: 300px;     /* 适合手机的高度，可以调整 */
+	border: 0;
+	display: block;    /* 去掉 iframe 自带的 inline 空隙 */
 	}
+
+	/*contact box*/
+  .contact-item {
+    display: flex;
+    flex-direction: column; /* 上下排列 */
+    margin-bottom: 20px;
+  }
+
+  .contact-item strong {
+    width: auto; /* 不固定宽度 */
+    margin-bottom: 5px; /* 与文字分开一点 */
+  }
+
+  .contact-item span {
+    word-break: break-word; /* 地址太长也能自动换行 */
+  }
 
 }
 
@@ -450,6 +466,7 @@ header {
 
 
 }
+
 
 
 
