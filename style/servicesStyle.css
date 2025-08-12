@@ -77,7 +77,7 @@
 }
 
 .section-line {
-  width: 100%; /* 或者 90% 留两边空隙 */
+  width: 90%; /* 或者 90% 留两边空隙 */
   max-width: 1200px; /* 限制在大屏上不超过 1200px */
   height: 2px;
   background: linear-gradient(to right, black, white);
@@ -144,3 +144,4 @@
   color: #555;
 
 }
+
