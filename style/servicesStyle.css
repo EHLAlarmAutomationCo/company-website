@@ -77,7 +77,8 @@
 }
 
 .section-line {
-  width: 1200px;
+  width: 100%; /* 或者 90% 留两边空隙 */
+  max-width: 1200px; /* 限制在大屏上不超过 1200px */
   height: 2px;
   background: linear-gradient(to right, black, white);
   margin: 0 auto;
@@ -141,4 +142,5 @@
 .why-item p {
   font-size: 16px;
   color: #555;
+
 }
