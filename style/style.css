@@ -409,9 +409,17 @@ header {
     padding: 0 10px;
   }
 
-	.map-container {
-    	padding: 0 10px; /* 给手机左右留点空隙 */
+  .map-container {
+    padding: 0 10px; /* 给手机左右留点空隙 */
   }
+
+	.map-container iframe {
+	  width: 100%;       /* 占满容器宽度 */
+	  max-width: 100%;   /* 不超出容器 */
+	  height: 300px;     /* 适合手机的高度，可以调整 */
+	  border: 0;
+	  display: block;    /* 去掉 iframe 自带的 inline 空隙 */
+	}
 
 }
 
@@ -442,6 +450,7 @@ header {
 
 
 }
+
 
 
 
