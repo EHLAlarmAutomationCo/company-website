@@ -34,7 +34,7 @@
 
 .service-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* 让内容顶部对齐 */
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
@@ -43,11 +43,10 @@
 }
 
 .service-content img {
-  width: 100%;
-  max-width: 320px;
+  flex: 0 0 45%; /* 图片固定占 45% 宽度 */
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
-  flex: 1;
 }
 
 .service-text {
@@ -144,4 +143,5 @@
   color: #555;
 
 }
+
 
