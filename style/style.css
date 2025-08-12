@@ -388,7 +388,6 @@ header {
   .navLinks li {
     margin: 0; /* 去掉竖排的 10px 0 margin */
   }
-}
 
   .navigationBar {
 	flex-direction: row; /* 保持横向 */
@@ -466,6 +465,7 @@ header {
 
 
 }
+
 
 
 
