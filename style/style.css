@@ -408,9 +408,13 @@ header {
     padding: 0 10px;
   }
 
-  .map-container {
-    padding: 0 10px; /* 给手机左右留点空隙 */
-  }
+ .map-container {
+   width: 100%;         /* 保证容器宽度是屏幕宽 */
+   max-width: 100%;     /* 限制最大宽度 */
+   padding: 0;          /* 去掉左右 padding，防止小屏幕溢出 */
+   overflow-x: hidden;  /* 防止横向滚动条 */
+   box-sizing: border-box; /* 防止宽度计算出错 */
+ }
 
   .map-container iframe {
 	width: 100%;       /* 占满容器宽度 */
@@ -465,6 +469,7 @@ header {
 
 
 }
+
 
 
 
