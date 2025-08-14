@@ -379,14 +379,17 @@ header {
 
   /* nav 部分改成自动换行而不是强制竖排 */
   .navLinks {
-    flex-wrap: wrap; /* 自动换行 */
-    flex-direction: row; /* 保持横向 */
-    justify-content: center; /* 居中对齐 */
-    gap: 8px 16px; /* 上下 8px 间距，左右 16px 间距 */
+    display: flex !important;       /* 确保是 flex 布局 */
+    flex-direction: row !important; /* 强制横排 */
+    flex-wrap: wrap !important;     /* 宽度不够自动换行 */
+    justify-content: center !important; /* 居中 */
+    align-items: center;
+    row-gap: 6px;                    /* 行间距 */
   }
 
   .navLinks li {
-    margin: 0; /* 去掉竖排的 10px 0 margin */
+    margin: 0 10px; /* 适当减小间距让手机排下更多 */
+    white-space: nowrap; /* 防止文字在按钮内换行 */
   }
 
   .navigationBar {
@@ -469,6 +472,7 @@ header {
 
 
 }
+
 
 
 
