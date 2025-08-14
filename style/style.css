@@ -384,11 +384,11 @@ header {
     flex-wrap: wrap !important;     /* 宽度不够自动换行 */
     justify-content: center !important; /* 居中 */
     align-items: center;
-    row-gap: 6px;                    /* 行间距 */
+    gap: 12px 20px;                    /* 行间距 */
   }
 
   .navLinks li {
-    margin: 0 10px; /* 适当减小间距让手机排下更多 */
+    margin: 0; /* 适当减小间距让手机排下更多 */
     white-space: nowrap; /* 防止文字在按钮内换行 */
   }
 
@@ -472,6 +472,7 @@ header {
 
 
 }
+
 
 
 
